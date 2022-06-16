@@ -1,0 +1,41 @@
+# from collections import UserList
+# import smtplib
+# import os
+# from email.mime.text import MIMEText
+
+# from psutil import users
+# # import models.User
+# # from .models import *
+
+# # impor
+
+
+# def send_email(message):
+#     sender = "nursamanzhol@gmail.com"
+#     # your password = "your password"
+#     password = "031028ser"
+
+#     server = smtplib.SMTP("smtp.gmail.com", 587)
+#     server.starttls()
+
+#     try:
+#         server.login(sender, password)
+#         msg = MIMEText(message)
+#         msg["Subject"] = UserList.__name__
+#         server.sendmail(sender, sender, msg.as_string())
+
+#         # server.sendmail(sender, sender, f"Subject: CLICK ME PLEASE!\n{message}")
+
+#         return "The message was sent successfully!"
+#     except Exception as _ex:
+#         return f"{_ex}\nCheck your login or password please!"
+
+
+# def main():
+#     # message = input("Type your message: ")
+#     message = "New Client"
+#     print(send_email(message=message))
+
+
+# if __name__ == "__main__":
+#     main()
